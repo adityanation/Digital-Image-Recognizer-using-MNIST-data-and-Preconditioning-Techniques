@@ -16,7 +16,7 @@ Visualization
 Results
 License
 Installation
-Clone the repository:
+Clone the repository
 
 bash
 Copy code
