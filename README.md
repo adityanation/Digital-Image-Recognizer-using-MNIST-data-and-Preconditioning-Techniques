@@ -14,7 +14,6 @@ Hierarchical Clustering
 Evaluation
 Visualization
 Results
-License
 Installation
 Clone the repository
 
