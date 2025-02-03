@@ -10,7 +10,6 @@ Installation
 Dataset
 Preprocessing
 Gaussian Mixture Model
-Hierarchical Clustering
 Evaluation
 Visualization
 Results
