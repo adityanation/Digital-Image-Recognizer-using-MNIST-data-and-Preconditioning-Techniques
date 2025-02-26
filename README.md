@@ -11,11 +11,6 @@ Dataset
 Preprocessing
 Gaussian Mixture Model
 Evaluation
-Visualization
-Results
-Installation
-Clone the repository
-
 bash
 Copy code
 git clone https://github.com/your-username/mnist-clustering.git
