@@ -43,23 +43,7 @@ python
 Copy code
 gmm = GaussianMixture(n_components=10, random_state=42)
 gmm.fit(X_scaled)
-gmm_labels = gmm.predict(X_scaled)
-Hierarchical Clustering
-Hierarchical Clustering is a type of clustering algorithm that builds a hierarchy of clusters.
-
-Agglomerative Clustering: This method starts by treating each point as a single cluster and merges the closest clusters until 10 clusters remain.
-python
-Copy code
-hierarchical_clustering = AgglomerativeClustering(n_clusters=10)
-hierarchical_labels = hierarchical_clustering.fit_predict(X_scaled)
-Evaluation
-The model's performance can be evaluated by comparing the clustering labels with the original digit labels in the dataset.
-
-Confusion Matrix: The confusion matrix shows how well the clusters match the original digit labels.
-python
-Copy code
-print("GMM Confusion Matrix:\n", confusion_matrix(y, gmm_labels))
-print("Hierarchical Clustering Confusion Matrix:\n", confusion_matrix(y, hierarc
+gmm_labels = gmm.p
 dendrogram(Z)
 plt.show()
 Results
