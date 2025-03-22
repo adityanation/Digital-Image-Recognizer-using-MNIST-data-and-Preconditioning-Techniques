@@ -26,24 +26,7 @@ Copy code
 from google.colab import drive
 drive.mount('/content/drive', force_remount=True)
 Dataset
-The MNIST dataset consists of 28x28 pixel grayscale images of handwritten digits. In this project, we use a small subset of the training dataset (mnist_train_small.csv), where:
-
-The first column contains labels (0-9).
-The remaining columns represent pixel values (784 features).
-The dataset can be loaded from the sample_data folder in Google Colab.
-
-Preprocessing
-Feature Scaling: Before applying clustering techniques, the data is normalized using StandardScaler to standardize the pixel values.
-Gaussian Mixture Model
-The Gaussian Mixture Model (GMM) is a probabilistic model that assumes all data points are generated from a mixture of several Gaussian distributions.
-
-Number of Components: We use 10 components, one for each digit (0-9).
-Prediction: Each data point is assigned to one of the Gaussian components based on the probability distribution.
-python
-Copy code
-gmm = GaussianMixture(n_components=10, random_state=42)
-gmm.fit(X_scaled)
-gmm_labels = gmm.p
+The MNIST dataset 
 dendrogram(Z)
 plt.show()
 Results
