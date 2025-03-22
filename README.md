@@ -59,17 +59,7 @@ Confusion Matrix: The confusion matrix shows how well the clusters match the ori
 python
 Copy code
 print("GMM Confusion Matrix:\n", confusion_matrix(y, gmm_labels))
-print("Hierarchical Clustering Confusion Matrix:\n", confusion_matrix(y, hierarchical_labels))
-Visualization
-Cluster Visualization: A few sample images are displayed with their corresponding predicted clusters from both the GMM and Hierarchical Clustering models.
-python
-Copy code
-plt.imshow(X.iloc[i].values.reshape(28, 28), cmap='gray')
-Dendrogram: A dendrogram is plotted to visualize the hierarchical merging of clusters (using a subset of 100 samples for clarity).
-python
-Copy code
-Z = linkage(X_scaled[:100], 'ward')
-plt.figure(figsize=(10, 7))
+print("Hierarchical Clustering Confusion Matrix:\n", confusion_matrix(y, hierarc
 dendrogram(Z)
 plt.show()
 Results
